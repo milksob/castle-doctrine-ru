@@ -1,0 +1,346 @@
+writeFailed "Ошибка:  директория игры -- только для чтения"
+
+
+loading "Загрузка..."
+
+
+badPropertiesSignature "Bad properties signature in"
+badSpriteSignature "Bad sprite signature in"
+badObjectSignature "Bad object signature in"
+badReachSignature      "Bad tool reach signature in"
+badTransitionSignature      "Bad transition signature in"
+
+
+
+pauseMessage1 "Нажмите ВВОД чтобы продолжить"
+
+pauseMessage2 "или оставьте что-нибудь на будущее:"
+
+pauseMessage3 "Нажмите '%' для выхода"
+pauseMessage3b "Вы не можете выйти сейчас (вы умрете)"
+
+pauseMessage4 "-"
+
+
+
+quitMessage "Нажать ESC для Выхода"
+
+email "Адрес электронной почты:"	
+downloadCode "Код:"
+
+paste "Вставить"
+
+atSignTip "Добавить знак '@' (на случай нестандартной клавиатуры)"
+
+
+loginButton "Войти"
+
+loginMessage "Выполняется вход..."
+
+reflectorFailed "Invalid response from reflector"
+loginFailed "Ошибка входа"
+
+outOfDateClient "Пожалуйста, загрузите последнюю версию."
+
+
+serverShutdownMessage "Сервер закрыт по техническим причинам.##Пожалуйста, попробуйте еще раз позже."
+
+permadeadMessage "Ваша смерть на этом сервере -- необратима."
+
+
+houseBeingRobbed "Ваше жилище в настоящее время грабят.##Вы не можете трудится над ним сейчас."
+returnMenu "В Меню"
+
+returnHome "Вернуться в Ваше Жилище"
+
+
+shutdownPendingWarning "Сервер ждет вас, перед тем как отключиться.##Пожалуйста, завершайте, что делаете.######Нажать ПРОБЕЛ для возвращения в игру."
+
+
+
+
+okay "Okay"
+
+
+workReport "Вернувшись после %d часа работы:"
+workReportPlural "Вернувшись после %d часов работы:"
+
+youEarnReport "Вы выручили $%d"
+wifeEarnReport "%s выручила $%d"
+
+
+blueprintDescription "План дома %s:"
+
+
+
+editDescription "Поработайте над своим жилищем:##(Пять минут бездействия заставят вас покинуть его...)"
+
+loadBackpackDescription "Соберите ваш рюкзак:"
+loadBackpackSellModeDescription "Продать орудия:"
+
+backpackLabel "Рюкзак:"
+vaultLabel "Хранилище:"
+
+loadBackpack "В Рюкзак"
+
+loadBackpackTip "Снарядите рюкзак перед выходом"
+
+backpackUndoTip "Отменить покупку %s"
+backpackSellUndoTip "Отменить продажу %s"
+backpackMultipleSellUndoTip "Отменить продажу %d %s"
+
+openAuctionList "Аукционы"
+
+openAuctionListTip "Просмотреть текущие аукционы галерей"
+
+
+gridViewObjects "Просмотреть сетку объектов"
+gridViewTools "Просмотреть сетку орудий"
+
+moreButtonObject "Объекты, еще %d..."
+moreButtonTool "Орудия, еще %d..."
+
+moreButtonObjects "объекты, еще %d..."
+moreButtonTools "инструменты, еще %d..."
+
+
+pickerDescription "Выберите одно:"
+pickerBack "Обратно"
+
+
+doneEdit "Готово"
+
+jumpToTapes "Записи"
+jumpToTapesTip "Покинуть жилище и просмотреть записи с камер видеонаблюдения"
+
+
+
+undo "Отмена"
+undoTip "Отменить (Ctrl-Z)"
+
+eyedropperTip "Ctrl-клик на объекте в вашем жилище, чтобы копировать"
+
+
+diffHighlightsOn "Turn change highlights on"
+diffHighlightsOff "Turn change highlights off"
+
+galleryLabel "Галлерея:"
+galleryArchiveLabel "Архив:"
+
+editBalance "Сальдо:"
+
+familyExitMessage2 "Семье##закрыт##путь к выходу."
+familyExitMessage  "Семье нужен##свободный проход##до выхода."
+
+
+
+buyTip "Купить %s и положить в рюкзак"
+backpackSlotTip "Перенести %s в хранилище"
+vaultSlotTip "Положить %s в рюкзак"
+
+backpackHalfSlotTip "Перенести %d %s в хранилище"
+vaultHalfSlotTip "Положить %d %s в рюкзак"
+
+
+sellSlotTip "Продать %s за $%d" 
+sellHalfSlotTip "Продать %d %s за $%d" 
+
+
+sellMode "К Продаже"
+sellHalf "Пополам"
+sellOne  "Поштучно"
+sellAll  "Продать всё"
+
+buyMode "К Покупке"
+moveHalf "Пополам"
+moveOne  "Поштучно"
+
+
+sellModeTip "Перейти к продаже орудий"
+buyModeTip "Перейти к покупке орудий"
+
+sellHalfTip "Продавать по половине предметов из ячейки"
+sellOneTip "Продавать по одному предмету за раз"
+sellAllTip "Продать всё содержимое рюкзака и хранилища за $%d"
+
+moveHalfTip "Перемещать по половине предметов из ячейки"
+moveOneTip "Перемещать по одному предмету за раз"
+
+
+
+selfTestDescription "Докажите, что вы не заблокированы собственной системой безопасности:##(Доберитесь до хранилища без инструментов. Будьте осторожны...)"
+
+
+auctionDescription "Текущие аукционы:"
+
+auctionTimeString "Цены упадут через:"
+auctionPricesStale "Доступны новые цены"
+auctionUpdateButton "Обновить"
+auctionUpdateButtonTip "Получить последние цены с торгов"
+
+buyButton "Купить"
+
+buyButtonTip "Купить %s за $%d"
+shortBuyButtonTip "Купить %s"
+
+
+auctionBuyFailed "Кто-то другой купил эту вещь раньше вас."
+auctionBuySucceed "Вы купили %s за $%d"
+
+
+
+
+houseCheckedIn "House checked back in."
+houseCheckInFailed "House check in failed."
+
+
+
+nameSearch "Поиск по Имени:"
+filter "Фильтр"
+ignoreHouse "Ignore House"
+clearIgnoreList "Un-Ignore All"
+startRobHouse "Ограбить Жилище"
+viewBlueprint "Смотреть План Жилища"
+
+listRobberyReplays "View Your Security Tapes"
+startProofReplay "View House Self-Test"
+
+emptyList "Ничего не найдено."
+
+robPickListTip "%d tried to rob %s house.  %d died trying"
+
+replayPickListTip "%s stole $%d in %d steps after %d died"
+replayPickListBountyTip "%s died ($%d bounty) in %d steps after %d died"
+
+ignoreTip "Hide house from list until house changes"
+clearIgnoreListTip "Resumes showing all houses, with none ignored"
+
+
+startTileDescription "Welcome Mat"
+
+wifeHolding "%s (carrying $%d)"
+
+
+robDescription "Ограбление жилища %s:##(Пять минут бездействия смертельны...)"
+
+robCops "Sirens?"
+
+robBackpack "Рюкзак:"
+
+viewBlueprintShort "План"
+viewBlueprintTip "Смотреть план жилища"
+
+
+suicide "Самоубийство"
+suicideTip "Потерять все и начать сначала"
+unconfirmedSuicideTip "Сначала поставить птичку для подтверждения..."
+suicideConfirmTip "Подтверить самоубийство"
+
+
+doneRobTest "Give Up"
+
+doneRobDead "Принять"
+
+
+doneStale "Okay"
+
+
+
+leave "Leave"
+
+
+musicOff "Отключить Музыку"
+musicOn "Включить Музыку"
+
+safeMoveOn "Enable safe ENTER-confirmation for movement"
+safeMoveOff "Disable safe ENTER-confirmation for movement"
+
+safeMoveTip "Press ENTER to confirm this move"
+
+
+
+killedBy "You were killed by:"
+
+
+
+deathMessage "You died."
+
+leaveOutOfTime "The cops shoot you as you leave the house."
+
+startOver "Fresh Start"
+
+
+backpackDropLeave "You ditch your backpack as you run out the door."
+backpackDropVault "You empty your backpack to make room for the vault contents."
+
+
+robSuccess "%s##You stole $%d"
+
+robStuffSuccess "%s##You stole $%d and these items:"
+
+robOneItemSuccess "%s##You stole $%d and this item:"
+
+
+
+listFetchFailed "Failed to fetch house list"
+auctionListFetchFailed "Failed to fetch auction list"
+
+
+
+houseBeingRobbedOrEdited "Someone else is in that house.##You can't rob it now."
+houseReclaimed "That house was reclaimed by##the state after the owner died."
+
+houseChilling "Something about this house gives you the chills.##You can't bear to enter it."
+
+houseStale "You left the house due to inactivity."
+
+houseStaleDead "You died due to inactivity."
+houseStaleOutOfTime "You were killed by the cops."
+
+
+blueprintNotFound "Failed to find the requested blueprint."
+
+
+robberyLogNotFound "Failed to find the requested robbery log."
+
+
+
+nameYou "You"
+nameSelf "Self"
+
+startReplay "Play Tape"
+
+
+replayDescription "Security Tape:  %s robbed##%s for $%d"
+replayDescriptionBounty "Security Tape:  %s robbed##%s ($%d bounty)"
+
+
+step "Step"
+play "Play"
+faster "Faster"
+stop "Stop"
+restart "Restart"
+
+toggleVisibility "Visibility"
+
+toggleVisibilityTip "Toggle visibility shroud"
+
+
+playbackTag           "Playback %:"
+playbackToggleMessage "(Press % to hide)"
+playbackEndMessage    "(Press ESC to end)"
+
+
+enterDemoCode  "Enter a demo code:"
+checkingCode  "Checking demo permissions with server..."
+
+
+
+responseWarning "Cannot reach server.  Attempting retry %d..."
+
+
+err_webRequest   "ERROR:  Web request failed."
+err_codeFailed  "This demo code was denied by the server."
+err_serverVerifyFailed  "Response from the server could not be authenticated."
+
+err_badServerResponse  "ERROR:  Unexpected response from server"
