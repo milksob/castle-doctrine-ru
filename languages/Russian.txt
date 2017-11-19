@@ -23,7 +23,7 @@ pauseMessage4 "-"
 
 
 
-quitMessage "Нажать ESC для Выхода"
+quitMessage "Нажмите ESC для Выхода"
 
 email "Адрес электронной почты:"	
 downloadCode "Код:"
@@ -49,7 +49,7 @@ permadeadMessage "Ваша смерть на этом сервере -- необратима."
 
 
 houseBeingRobbed "Ваше жилище в настоящее время грабят.##Вы не можете трудится над ним сейчас."
-returnMenu "В Меню"
+returnMenu "К Меню"
 
 returnHome "Вернуться в Ваше Жилище"
 
@@ -73,7 +73,7 @@ blueprintDescription "План дома %s:"
 
 
 
-editDescription "Поработайте над своим жилищем:##(Пять минут бездействия заставят вас покинуть его...)"
+editDescription "Поработайте над своим жилищем:##(Пять минут бездействия заставят вас уйти...)"
 
 loadBackpackDescription "Соберите ваш рюкзак:"
 loadBackpackSellModeDescription "Продать орудия:"
@@ -83,7 +83,7 @@ vaultLabel "Хранилище:"
 
 loadBackpack "В Рюкзак"
 
-loadBackpackTip "Снарядите рюкзак перед выходом"
+loadBackpackTip "Собрать рюкзак перед выходом"
 
 backpackUndoTip "Отменить покупку %s"
 backpackSellUndoTip "Отменить продажу %s"
@@ -105,7 +105,7 @@ moreButtonTools "инструменты, еще %d..."
 
 
 pickerDescription "Выберите одно:"
-pickerBack "Обратно"
+pickerBack "Назад"
 
 
 doneEdit "Готово"
@@ -116,13 +116,13 @@ jumpToTapesTip "Покинуть жилище и просмотреть записи с камер видеонаблюдения"
 
 
 undo "Отмена"
-undoTip "Отменить (Ctrl-Z)"
+undoTip "Отменить (Ctrl+Z)"
 
-eyedropperTip "Ctrl-клик на объекте в вашем жилище, чтобы копировать"
+eyedropperTip "Ctrl+клик на объекте в вашем жилище, чтобы копировать"
 
 
-diffHighlightsOn "Turn change highlights on"
-diffHighlightsOff "Turn change highlights off"
+diffHighlightsOn "Включить подсветку изменений"
+diffHighlightsOff "Отключить подсветку изменений"
 
 galleryLabel "Галлерея:"
 galleryArchiveLabel "Архив:"
@@ -130,7 +130,7 @@ galleryArchiveLabel "Архив:"
 editBalance "Сальдо:"
 
 familyExitMessage2 "Семье##закрыт##путь к выходу."
-familyExitMessage  "Семье нужен##свободный проход##до выхода."
+familyExitMessage  "Семье нужен##свободный##проход##до выхода."
 
 
 
@@ -184,7 +184,7 @@ buyButtonTip "Купить %s за $%d"
 shortBuyButtonTip "Купить %s"
 
 
-auctionBuyFailed "Кто-то другой купил эту вещь раньше вас."
+auctionBuyFailed "Кто-то другой купил вещь раньше вас."
 auctionBuySucceed "Вы купили %s за $%d"
 
 
@@ -202,28 +202,28 @@ clearIgnoreList "Un-Ignore All"
 startRobHouse "Ограбить Жилище"
 viewBlueprint "Смотреть План Жилища"
 
-listRobberyReplays "View Your Security Tapes"
-startProofReplay "View House Self-Test"
+listRobberyReplays "К записям видеонаблюдения"
+startProofReplay "Смотреть самопроверку жилища"
 
 emptyList "Ничего не найдено."
 
-robPickListTip "%d tried to rob %s house.  %d died trying"
+robPickListTip "%d пыталось ограбить жилище %s.  %d умерло при попытке"
 
-replayPickListTip "%s stole $%d in %d steps after %d died"
-replayPickListBountyTip "%s died ($%d bounty) in %d steps after %d died"
+replayPickListTip "%s украл $%d за %d шагов после %d погибших"
+replayPickListBountyTip "%s умер (награда $%d) за %d шагов после %d погибших"
 
-ignoreTip "Hide house from list until house changes"
-clearIgnoreListTip "Resumes showing all houses, with none ignored"
+ignoreTip "Убрать жилище из списка пока оно не изменится"
+clearIgnoreListTip "Показать все дома, даже ранее убраные"
 
 
-startTileDescription "Welcome Mat"
+startTileDescription "Входной коврик"
 
-wifeHolding "%s (carrying $%d)"
+wifeHolding "%s (несёт $%d)"
 
 
 robDescription "Ограбление жилища %s:##(Пять минут бездействия смертельны...)"
 
-robCops "Sirens?"
+robCops "Сирены?"
 
 robBackpack "Рюкзак:"
 
@@ -231,13 +231,13 @@ viewBlueprintShort "План"
 viewBlueprintTip "Смотреть план жилища"
 
 
-suicide "Самоубийство"
+suicide "Суицид"
 suicideTip "Потерять все и начать сначала"
-unconfirmedSuicideTip "Сначала поставить птичку для подтверждения..."
-suicideConfirmTip "Подтверить самоубийство"
+unconfirmedSuicideTip "Сначала клик на квадратик для подтверждения..."
+suicideConfirmTip "Подтверить суицид"
 
 
-doneRobTest "Give Up"
+doneRobTest "Сдаться"
 
 doneRobDead "Принять"
 
@@ -246,39 +246,39 @@ doneStale "Okay"
 
 
 
-leave "Leave"
+leave "Уйти"
 
 
 musicOff "Отключить Музыку"
 musicOn "Включить Музыку"
 
-safeMoveOn "Enable safe ENTER-confirmation for movement"
-safeMoveOff "Disable safe ENTER-confirmation for movement"
+safeMoveOn "Включить подтверждение хода через ENTER"
+safeMoveOff "Выключить подтвержение хода через ENTER"
 
-safeMoveTip "Press ENTER to confirm this move"
-
-
-
-killedBy "You were killed by:"
+safeMoveTip "Нажмите ENTER для подтверждения хода"
 
 
 
-deathMessage "You died."
-
-leaveOutOfTime "The cops shoot you as you leave the house."
-
-startOver "Fresh Start"
+killedBy "Причина вашей смерти:"
 
 
-backpackDropLeave "You ditch your backpack as you run out the door."
-backpackDropVault "You empty your backpack to make room for the vault contents."
+
+deathMessage "Вы умерли."
+
+leaveOutOfTime "Менты пристрелят вас на выходе из дома."
+
+startOver "Начать заново"
 
 
-robSuccess "%s##You stole $%d"
+backpackDropLeave "Вы бросили свой рюкзак выбегая за дверь."
+backpackDropVault "Вы опустошили свой рюкзак ради содержимого хранилища."
 
-robStuffSuccess "%s##You stole $%d and these items:"
 
-robOneItemSuccess "%s##You stole $%d and this item:"
+robSuccess "%s##Вы украли $%d"
+
+robStuffSuccess "%s##Вы украли $%d и эти вещи:"
+
+robOneItemSuccess "%s##Вы украли $%d и эту вещь:"
 
 
 
@@ -287,60 +287,60 @@ auctionListFetchFailed "Failed to fetch auction list"
 
 
 
-houseBeingRobbedOrEdited "Someone else is in that house.##You can't rob it now."
-houseReclaimed "That house was reclaimed by##the state after the owner died."
+houseBeingRobbedOrEdited "Кто-то другой в этом доме.##Вы не можете грабить его сейчас."
+houseReclaimed "Это жилище перешло государству##после смерти владельца."
 
-houseChilling "Something about this house gives you the chills.##You can't bear to enter it."
+houseChilling "От этого жилища у вас мурашки.##Вы не можете заставить себя войти."
 
-houseStale "You left the house due to inactivity."
+houseStale "Вы покинули жилище из-за бездействия."
 
-houseStaleDead "You died due to inactivity."
-houseStaleOutOfTime "You were killed by the cops."
-
-
-blueprintNotFound "Failed to find the requested blueprint."
+houseStaleDead "Вы погибли из-за бездействия."
+houseStaleOutOfTime "Вас убили менты."
 
 
-robberyLogNotFound "Failed to find the requested robbery log."
+blueprintNotFound "Неудачный запрос плана."
+
+
+robberyLogNotFound "Неудачный запрос записи ограбления."
 
 
 
-nameYou "You"
-nameSelf "Self"
+nameYou "Вы"
+nameSelf "Сам"
 
-startReplay "Play Tape"
-
-
-replayDescription "Security Tape:  %s robbed##%s for $%d"
-replayDescriptionBounty "Security Tape:  %s robbed##%s ($%d bounty)"
+startReplay "Проиграть запись"
 
 
-step "Step"
-play "Play"
-faster "Faster"
-stop "Stop"
-restart "Restart"
+replayDescription "Запись наблюдения:  %s ограбил##%s на $%d"
+replayDescriptionBounty "Запись наблюдения:  %s ограбил##%s (награда $%d)"
 
-toggleVisibility "Visibility"
 
-toggleVisibilityTip "Toggle visibility shroud"
+step "Ход"
+play "Проиграть"
+faster "Быстрее"
+stop "Стоп"
+restart "С начала"
+
+toggleVisibility "Видимость"
+
+toggleVisibilityTip "Переключить режим затемнения видимости"
 
 
 playbackTag           "Playback %:"
-playbackToggleMessage "(Press % to hide)"
-playbackEndMessage    "(Press ESC to end)"
+playbackToggleMessage "(Нажмите % чтобы скрыть)"
+playbackEndMessage    "(Нажмите ESC чтобы закончить)"
 
 
-enterDemoCode  "Enter a demo code:"
-checkingCode  "Checking demo permissions with server..."
+enterDemoCode  "Введите демо код:"
+checkingCode  "Проверка демо разрешений на сервере..."
 
 
 
-responseWarning "Cannot reach server.  Attempting retry %d..."
+responseWarning "Сервер не доступен.  Попытка %d..."
 
 
-err_webRequest   "ERROR:  Web request failed."
-err_codeFailed  "This demo code was denied by the server."
-err_serverVerifyFailed  "Response from the server could not be authenticated."
+err_webRequest   "ОШИБКА:  Неудачный Веб запрос."
+err_codeFailed  "Этот демо код не принят сервером."
+err_serverVerifyFailed  "Ответ сервера не может быть проверен."
 
-err_badServerResponse  "ERROR:  Unexpected response from server"
+err_badServerResponse  "ОШИБКА:  Неизвестный ответ от сервера"
