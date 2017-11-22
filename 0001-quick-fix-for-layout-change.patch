@@ -1,0 +1,75 @@
+From 17aa896a8db8751191a1c53f3781df625e89b1e8 Mon Sep 17 00:00:00 2001
+From: vm <vladimir.molokov@gmail.com>
+Date: Thu, 23 Nov 2017 01:56:56 +0300
+Subject: [PATCH] quick fix for layout change
+
+---
+ minorGems/graphics/openGL/ScreenGL_SDL.cpp | 52 +++++++++++++++---------------
+ 1 file changed, 26 insertions(+), 26 deletions(-)
+
+diff --git a/minorGems/graphics/openGL/ScreenGL_SDL.cpp b/minorGems/graphics/openGL/ScreenGL_SDL.cpp
+index 7246edb..7b8294f 100644
+--- a/minorGems/graphics/openGL/ScreenGL_SDL.cpp
++++ b/minorGems/graphics/openGL/ScreenGL_SDL.cpp
+@@ -2558,32 +2558,32 @@ char mapSDLKeyToASCII( int inSDLKey ) {
+         case SDLK_CARET: return '^';
+         case SDLK_UNDERSCORE: return '_';
+         case SDLK_BACKQUOTE: return '`';
+-        case SDLK_a: return 'a';
+-        case SDLK_b: return 'b';
+-        case SDLK_c: return 'c';
+-        case SDLK_d: return 'd';
+-        case SDLK_e: return 'e';
+-        case SDLK_f: return 'f';
+-        case SDLK_g: return 'g';
+-        case SDLK_h: return 'h';
+-        case SDLK_i: return 'i';
+-        case SDLK_j: return 'j';
+-        case SDLK_k: return 'k';
+-        case SDLK_l: return 'l';
+-        case SDLK_m: return 'm';
+-        case SDLK_n: return 'n';
+-        case SDLK_o: return 'o';
+-        case SDLK_p: return 'p';
+-        case SDLK_q: return 'q';
+-        case SDLK_r: return 'r';
+-        case SDLK_s: return 's';
+-        case SDLK_t: return 't';
+-        case SDLK_u: return 'u';
+-        case SDLK_v: return 'v';
+-        case SDLK_w: return 'w';
+-        case SDLK_x: return 'x';
+-        case SDLK_y: return 'y';
+-        case SDLK_z: return 'z';
++        case SDLK_a: return 'Æ';
++        case SDLK_b: return 'É';
++        case SDLK_c: return 'Ó';
++        case SDLK_d: return '×';
++        case SDLK_e: return 'Õ';
++        case SDLK_f: return 'Á';
++        case SDLK_g: return 'Ð';
++        case SDLK_h: return 'Ò';
++        case SDLK_i: return 'Û';
++        case SDLK_j: return 'Ï';
++        case SDLK_k: return 'Ì';
++        case SDLK_l: return 'Ä';
++        case SDLK_m: return 'Ø';
++        case SDLK_n: return 'Ô';
++        case SDLK_o: return 'Ý';
++        case SDLK_p: return 'Ú';
++        case SDLK_q: return 'Ê';
++        case SDLK_r: return 'Ë';
++        case SDLK_s: return 'Ù';
++        case SDLK_t: return 'Å';
++        case SDLK_u: return 'Ç';
++        case SDLK_v: return 'Í';
++        case SDLK_w: return 'Ã';
++        case SDLK_x: return 'Þ';
++        case SDLK_y: return 'Î';
++        case SDLK_z: return 'Ñ';
+         case SDLK_DELETE: return 127;
+         case SDLK_WORLD_0:
+             
+-- 
+2.15.0
+
