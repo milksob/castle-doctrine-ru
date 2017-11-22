@@ -1,5 +1,18 @@
 writeFailed "Ошибка:  директория игры -- только для чтения"
 
+Cat "Кот"
+Chihuahua "Чиахуахуа"
+Brick "Кирпич"
+
+Vault "Хранилище"
+
+Empty Floor "Пустой Пол"
+Exterior Wall "Наружная стена"
+
+Lisa "Лиза"
+Anna "Анна"
+Ann "Энн"
+Joshua "Джошуа"
 
 loading "Загрузка..."
 
