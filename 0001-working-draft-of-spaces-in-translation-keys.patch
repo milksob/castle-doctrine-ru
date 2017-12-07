@@ -1,0 +1,165 @@
+From ef3253a681b33863e819308363c27bd4d7c14357 Mon Sep 17 00:00:00 2001
+From: vm <vladimir.molokov@gmail.com>
+Date: Thu, 7 Dec 2017 21:31:50 +0300
+Subject: [PATCH] working draft of spaces in translation keys
+
+---
+ minorGems/util/TranslationManager.cpp | 123 +++++++++++++++-------------------
+ 1 file changed, 55 insertions(+), 68 deletions(-)
+
+diff --git a/minorGems/util/TranslationManager.cpp b/minorGems/util/TranslationManager.cpp
+index 6b84da8..4e4e855 100644
+--- a/minorGems/util/TranslationManager.cpp
++++ b/minorGems/util/TranslationManager.cpp
+@@ -265,11 +265,9 @@ static inline char *stringSkip( const char *inString, int inNumChars ) {
+     return (char *)( &( inString[ inNumChars ] ) );
+     }
+ 
+-
+-
++/* returns pointer to first non-matching charater in string */
+ 
+ void TranslationManagerStaticMembers::setTranslationData( const char *inData ) {
+-    
+     // clear the old translation table
+     if( mTranslationKeys != NULL ) {
+         int numKeys = mTranslationKeys->size();
+@@ -279,7 +277,7 @@ void TranslationManagerStaticMembers::setTranslationData( const char *inData ) {
+             }
+         delete mTranslationKeys;
+         }
+-
++    
+     if( mNaturalLanguageStrings != NULL ) {
+         int numKeys = mNaturalLanguageStrings->size();
+ 
+@@ -288,73 +286,62 @@ void TranslationManagerStaticMembers::setTranslationData( const char *inData ) {
+             }
+         delete mNaturalLanguageStrings;
+         }
+-
++    
+     
+     // now read in the translation table
+     mTranslationKeys = new SimpleVector<char *>();
+     mNaturalLanguageStrings = new SimpleVector<char *>();
+             
+-
+-    
+-    char readError = false;
+-                
+-    while( ! readError ) {
+-
+-        char *key = new char[ 100 ];
+-
+-        int numRead = sscanf( inData, "%99s", key );
+-
+-        if( numRead == 1 ) {
+-            
+-            inData = stringSkip( inData, strlen( key ) );
+-            
+-            
+-            // skip the first "
+-            int readChar = ' ';
+-
+-            while( readChar != '"' && readChar != '\0' ) {
+-                readChar = inData[0];
+-                inData = stringSkip( inData, 1 );
+-                }
+-            if( readChar != EOF ) {
+-                char *naturalLanguageString = new char[1000];
+-                // scan a string of up to 999 characters, stopping
+-                // at the first " character
+-                numRead = sscanf( inData, "%999[^\"]",
+-                                  naturalLanguageString );
+-
+-                if( numRead == 1 ) {
+-                    inData = stringSkip( inData, 
+-                                         strlen( naturalLanguageString ) );
+-
+-                    // trim the key and string and save them
+-                    mTranslationKeys->push_back(
+-                        stringDuplicate( key ) );
+-                    mNaturalLanguageStrings->push_back(
+-                        stringDuplicate( naturalLanguageString ) );
+-                    }
+-                else {
+-                    readError = true;
+-                    }
+-                delete [] naturalLanguageString;
+-                
+-                // skip the trailing "
+-                readChar = ' ';
+-                
+-                while( readChar != '"' && readChar != '\0' ) {
+-                    readChar = inData[0];
+-                    inData = stringSkip( inData, 1 );                
+-                    }
+-                }
+-            else {
+-                readError = true;
+-                }
+-            
+-            }
+-        else {
+-            readError = true;
+-            }
+-        delete [] key;
+-        
+-        }
++    const char *pos = inData;
++    static const char *whitespace = "\n\r\t ";
++    static const int KEYSIZE = 100;
++    static const int VALSIZE = 1000;
++
++    printf("inData: %s\n", inData);
++    while (0 != *pos)
++    {
++        pos += strspn(pos, whitespace);
++        const char *key = pos;
++
++        int keylen = strcspn(key, "\"\n");
++	if ('\n' == key[keylen])
++	  continue; /* just skip line with error */
++
++	if ('"' == key[keylen])
++	  {
++	    const char *val = key + keylen + 1;
++	    
++	    const char *keyend = key + keylen - 1;
++	    while (keyend > key
++		   && NULL != strchr(whitespace, *keyend))
++	      --keyend; /*trim whitespace */
++	    printf("got good key: %c..%c\n", *key, *keyend);
++	    keylen = keyend - key + 1;
++	    
++	    if (keylen > 0 && keylen < KEYSIZE)
++	      { /*continue with value extraction */
++		int vallen = strcspn(val, "\"\n");
++		if ('\n' == val[vallen])
++		  continue;
++		if ('"' == val[vallen])
++		  {
++		    char *key_entry = new char[keylen+1];
++		    memcpy(key_entry, key, keylen);
++		    key_entry[keylen] = 0;
++		    mTranslationKeys->push_back(key_entry);
++
++		    char *val_entry = new char[vallen+1];
++		    memcpy(val_entry, val, vallen);
++		    val_entry[vallen] = 0;
++		    mNaturalLanguageStrings->push_back(val_entry);
++
++		    printf("got this: '%s' '%s'\n", key_entry, val_entry);
++		    const char *valend = val + vallen;
++		    pos = valend + strcspn(valend, "\n");
++		    continue;
++		  }
++	      }
++	  }
++	pos += strcspn(pos, "\n");
+     }
++}
+-- 
+2.15.0
+
